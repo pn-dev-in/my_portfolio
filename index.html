@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Pravesh Nandanwar — AI Engineer building applied ML systems, cloud-native applications, and production-grade developer tools.">
+  <meta property="og:title" content="Pravesh Nandanwar · AI Engineer">
+  <meta property="og:description"
+    content="Building AI-powered applications, cloud-native systems, and developer tools that solve real-world problems.">
+  <!-- Favicons -->
+
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <title>Pravesh Nandanwar | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">pn<span>.</span>dev</div>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#ai-assistant">Ask AI</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div style="display:flex;align-items:center;gap:0.75rem;margin-left:auto;">
+        <!-- THEME TOGGLE -->
+        <div class="theme-toggle">
+          <button class="theme-toggle-switch" id="themeToggle" onclick="toggleTheme()"
+            aria-label="Toggle light/dark theme" role="switch" aria-checked="false" title="Toggle theme">
+            <span class="theme-toggle-icon moon">🌙</span>
+            <span class="theme-toggle-thumb"></span>
+            <span class="theme-toggle-icon sun">☀️</span>
+          </button>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        <a href="https://github.com/pn-dev-in" target="_blank" class="nav-cta">GitHub →</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+    <a href="#architecture" onclick="closeMobileMenu()">Architecture</a>
+    <a href="#experience" onclick="closeMobileMenu()">Experience</a>
+    <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+    <a href="#ai-assistant" onclick="closeMobileMenu()">Ask AI</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+    <a href="https://github.com/pn-dev-in" target="_blank">
+      GitHub →
+    </a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-inner container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span>Open to Roles</div>
+        <h1 class="hero-name">Pravesh Nandanwar</h1>
+        <div class="hero-roles" role="list">
+          <span class="hero-role-badge" role="listitem">AI & ML Engineer</span>
+          <span class="hero-role-badge" role="listitem">Cloud Engineer</span>
+          <span class="hero-role-badge" role="listitem">Full Stack Developer</span>
+          <span class="hero-role-badge" role="listitem">DevOps Engineer</span>
+        </div>
+        <p class="hero-desc">
+          Building AI-powered applications, cloud-native systems, and developer tools that solve real-world problems.
+          Focused on reliability, user control, and production-grade software.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" rx="1" />
+              <rect x="14" y="3" width="7" height="7" rx="1" />
+              <rect x="3" y="14" width="7" height="7" rx="1" />
+              <rect x="14" y="14" width="7" height="7" rx="1" />
+            </svg>
+            View Projects
+          </a>
+          <a href="https://linkedin.com/in/pravesh-nandanwar" target="_blank" class="btn-secondary">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/pn-dev-in" target="_blank" class="btn-secondary">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <div class="avatar-ring">
+          <div class="avatar-img">
+            <img src="https://avatars.githubusercontent.com/u/210356364?v=4" alt="Pravesh Nandanwar"
+              onerror="this.parentElement.innerHTML='🧑‍💻'">
+          </div>
+        </div>
+        <div class="avatar-badge"><span
+            style="width:6px;height:6px;border-radius:50%;background:var(--success);display:inline-block"></span>Available
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- STATS -->
+  <section id="stats">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">At a Glance</div>
+        <h2 class="section-title">Engineering by Numbers</h2>
+        <p class="section-desc">Key metrics that represent Pravesh's academic record, output, and reach as an engineer.
+        </p>
+      </div>
+      <div class="stats-grid fade-up">
+        <div class="stat-card">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-value"><span class="counter" data-target="9.0">0</span></div>
+          <div class="stat-label">CGPA</div>
+          <div class="stat-change">↑ Consistent performance</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🚀</div>
+          <div class="stat-value"><span class="counter" data-target="8" data-int="true">0</span>+</div>
+          <div class="stat-label">Projects Built</div>
+          <div class="stat-change">↑ AI, Cloud, Full Stack</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-value"><span class="counter" data-target="6" data-int="true">0</span></div>
+          <div class="stat-label">Certifications</div>
+          <div class="stat-change">↑ AWS, Azure, NPTEL</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">📦</div>
+          <div class="stat-value"><span class="counter" data-target="11" data-int="true">0</span>+</div>
+          <div class="stat-label">GitHub Repositories</div>
+          <div class="stat-change">↑ Public &amp; active</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">⚡</div>
+          <div class="stat-value"><span class="counter" data-target="3" data-int="true">0</span></div>
+          <div class="stat-label">ML Systems Live</div>
+          <div class="stat-change">↑ NLP, CV, Voice AI</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">💼</div>
+          <div class="stat-value"><span class="counter" data-target="2" data-int="true">0</span></div>
+          <div class="stat-label">Roles / Internships</div>
+          <div class="stat-change">↑ Industry + Leadership</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="divider"></div>
+
+
+  <!-- =========================
+        ABOUT ME
+========================= -->
+
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- LEFT -->
+        <div class="about-image fade-up">
+          <div class="about-image-wrapper">
+            <img src="assets\me2.png" alt="Pravesh Nandanwar">
+          </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="about-content fade-up">
+          <div class="section-label">
+            ABOUT ME
+          </div>
+          <h2 class="section-title">
+            The Engineer behind the code
+          </h2>
+          <p class="about-text">
+            I'm <strong>Pravesh Nandanwar</strong>, an AI Engineer and
+            Full Stack Developer passionate about creating intelligent,
+            scalable, and production-ready applications.
+            My work combines Artificial Intelligence, Cloud Computing,
+            Backend Engineering, and modern Web Technologies to build
+            products that are practical, efficient, and impactful.
+          </p>
+          <p class="about-text">
+            From AI-powered assistants and computer vision systems to
+            enterprise CRM platforms and cloud-native applications,
+            I enjoy transforming ideas into reliable software that
+            delivers real value.
+          </p>
+          <div class="about-highlights">
+            <span>🤖 AI & Machine Learning</span>
+            <span>☁️ Cloud Engineering</span>
+            <span>⚙️ Full Stack Development</span>
+            <span>🚀 DevOps </span>
+          </div>
+          <div class="about-buttons">
+            <a href="assets/resume/Pravesh_Nandanwar_Resume.pdf" target="_blank" class="btn-primary">
+              👁 View Resume
+            </a>
+            <a href="assets/resume/Pravesh_Nandanwar_Resume.pdf" download class="btn-secondary">
+              ⬇ Download Resume
+            </a>
+            <a href="mailto:praveshnandanwar267@gmail.com" class="btn-secondary">
+              📩 Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Featured Work</div>
+        <h2 class="section-title">Production Systems & Projects</h2>
+        <p class="section-desc">Real-world AI systems, full-stack applications, and developer tools — each solving a
+          specific, well-defined problem.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card fade-up" onclick="openModal('posetrack')">
+          <div class="project-thumb"
+            style="background: linear-gradient(135deg, #0B0F19 0%, rgba(16,185,129,0.12) 100%)">
+            <span style="font-size:3rem;z-index:1">💪</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag green">MediaPipe</span><span class="tag green">OpenCV</span><span
+                class="tag">Flask</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">PoseTrack AI</div>
+            <div class="project-desc">Real-time AI fitness coach using computer vision and pose estimation. Counts reps,
+              analyzes joint angles, estimates calories, and streams feedback via a web interface.</div>
+            <div class="project-metrics">
+              <div class="metric"><strong>Real-time</strong> Pose Estimation</div>
+              <div class="metric"><strong>Auto</strong> Rep Counting</div>
+              <div class="metric"><strong>Flask</strong> Web App</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in/PoseTrack-AI" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Source Code
+              </a>
+              <a href="https://youtu.be/etn5ok5JK7A" target="_blank" class="link-btn" onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" onclick="openModal('talentmatch')">
+          <div class="project-thumb"
+            style="background: linear-gradient(135deg, #0B0F19 0%, rgba(124,58,237,0.15) 100%)">
+            <span style="font-size:3rem;z-index:1">🤖</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag">Python</span><span class="tag purple">NLP</span><span class="tag purple">BERT</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">TalentMatch AI</div>
+            <div class="project-desc">Intelligent resume screening &amp; candidate ranking platform. Automates ATS
+              scoring, skill extraction, and job matching using TF-IDF, BERT embeddings, and hybrid ML models.</div>
+            <div class="project-metrics">
+              <div class="metric"><strong>BERT</strong> Embeddings</div>
+              <div class="metric"><strong>PDF/DOCX</strong> Parsing</div>
+              <div class="metric"><strong>ATS</strong> Scoring</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in/TalentMatch-AI" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Source Code
+              </a>
+              <a href="https://talent-matchai.streamlit.app/" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" onclick="openModal('finpilot')">
+          <div class="project-thumb"
+            style="background: linear-gradient(135deg, #0B0F19 0%, rgba(245,158,11,0.12) 100%)">
+            <span style="font-size:3rem;z-index:1">💰</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag orange">Django</span><span class="tag orange">PostgreSQL</span><span class="tag">REST
+                API</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">FinPilot</div>
+            <div class="project-desc">Full-stack personal finance platform. Multi-account management, budget tracking,
+              Financial Health Score, spending forecasting, and anomaly detection. Deployed on Render with PostgreSQL.
+            </div>
+            <div class="project-metrics">
+              <div class="metric"><strong>Django REST</strong> API</div>
+              <div class="metric"><strong>Render</strong> Production</div>
+              <div class="metric"><strong>Health Score</strong> ML</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in/FinPilot" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Source Code
+              </a>
+              <a href="https://finpilot-hgxc.onrender.com/" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" onclick="openModal('voicepilot')">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0B0F19 0%, rgba(37,99,235,0.15) 100%)">
+            <span style="font-size:3rem;z-index:1">🎙️</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag">Python</span><span class="tag">Voice AI</span><span class="tag green">LLM</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">VoicePilot AI</div>
+            <div class="project-desc">Privacy-focused voice assistant with wake-word detection, long-term memory, tool
+              calling, and LLM reasoning. Designed for deterministic control and user intent preservation.</div>
+            <div class="project-metrics">
+              <div class="metric"><strong>Wake Word</strong> Detection</div>
+              <div class="metric"><strong>Long-term</strong> Memory</div>
+              <div class="metric"><strong>Tool</strong> Calling</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in/VoicePilot-AI" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Source Code
+              </a>
+              <span class="link-btn" style="opacity:0.5;cursor:not-allowed" onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo (Soon)
+              </span>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" onclick="openModal('chatflow')">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0B0F19 0%, rgba(37,99,235,0.15) 100%)">
+            <span style="font-size:3rem;z-index:1">💬</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag">Next.js</span><span class="tag purple">Socket.IO</span><span
+                class="tag green">PostgreSQL</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">ChatFlow</div>
+            <div class="project-desc">Modern real-time messaging platform with instant messaging, group collaboration,
+              media sharing, AI-powered assistance, and scalable full-stack architecture.</div>
+            <div class="project-metrics">
+              <div class="metric"><strong>Real-time</strong> Messaging</div>
+              <div class="metric"><strong>Group</strong> Collaboration</div>
+              <div class="metric"><strong>AI</strong> Assistant</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in/ChatFlow" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Source Code
+              </a>
+              <a href="https://chat-flow-eta-three.vercel.app/login" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" onclick="openModal('jpcbbank')">
+          <div class="project-thumb"
+            style="background: linear-gradient(135deg, #0B0F19 0%, rgba(16,185,129,0.12) 100%)">
+            <span style="font-size:3rem;z-index:1">🏦</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag green">PHP</span><span class="tag green">CodeIgniter 4</span><span
+                class="tag">MySQL</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">JPCB Bank</div>
+            <div class="project-desc">Full-stack banking platform built with CodeIgniter 4. Features admin dashboard,
+              CMS integration, ATM management, and secure transaction processing.</div>
+            <div class="project-metrics">
+              <div class="metric"><strong>Admin</strong> Dashboard</div>
+              <div class="metric"><strong>CMS</strong> Integration</div>
+              <div class="metric"><strong>ATM</strong> Management</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in/jpcb-bank-project" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Source Code
+              </a>
+              <a href="https://jpcb.staginglink.in/" target="_blank" class="link-btn" onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" onclick="openModal('servicecrm')">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0B0F19 0%, rgba(37,99,235,0.1) 100%)">
+            <span style="font-size:3rem;z-index:1">🛠️</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag orange">PHP</span><span class="tag orange">MySQL</span><span
+                class="tag green">RBAC</span><span class="tag">SaaS</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">ServiceCRM</div>
+            <div class="project-desc">Production-grade CRM for field service teams. Job dispatch, technician tracking,
+              invoicing, customer portal, and service analytics. Full multi-tenant SaaS architecture.</div>
+            <div class="project-metrics">
+              <div class="metric"><strong>Multi-tenant</strong> SaaS</div>
+              <div class="metric"><strong>Field Service</strong> CRM</div>
+              <div class="metric"><strong>Invoicing</strong> Module</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in" target="_blank" class="link-btn" onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="https://service.staginglink.in/" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" onclick="openModal('jobinsight')">
+          <div class="project-thumb"
+            style="background: linear-gradient(135deg, #0B0F19 0%, rgba(245,158,11,0.12) 100%)">
+            <span style="font-size:3rem;z-index:1">🔍</span>
+            <div class="project-thumb-overlay"></div>
+            <div class="project-thumb-tech">
+              <span class="tag orange">HTML5</span><span class="tag orange">CSS3</span><span
+                class="tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-name">JobInsightPortal</div>
+            <div class="project-desc">Responsive career and job opportunity exploration platform. Features job search
+              UI, career insights dashboard, and user-friendly navigation for tracking applications.</div>
+            <div class="project-metrics">
+              <div class="metric"><strong>Responsive</strong> Design</div>
+              <div class="metric"><strong>Job</strong> Search UI</div>
+              <div class="metric"><strong>Career</strong> Insights</div>
+            </div>
+            <div class="project-footer">
+              <a href="https://github.com/pn-dev-in/JobInsightPortal" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg fill="currentColor" viewBox="0 0 24 24" width="14" height="14">
+                  <path
+                    d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.37-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.06 1.82 2.79 1.29 3.47.99.1-.77.41-1.29.75-1.59-2.66-.3-5.46-1.33-5.46-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0024 12c0-6.63-5.37-12-12-12z" />
+                </svg>
+                Source Code
+              </a>
+              <a href="https://pn-dev-in.github.io/JobInsightPortal/" target="_blank" class="link-btn"
+                onclick="event.stopPropagation()">
+                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                  <polyline points="15 3 21 3 21 9" />
+                  <line x1="10" y1="14" x2="21" y2="3" />
+                </svg>
+                Live Demo
+              </a>
+              <span class="link-btn" style="margin-left:auto;cursor:pointer">View Details →</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ========= ARCHITECTURE SECTION – FULLY UPDATED TO SCREENSHOT STYLE ========= -->
+  <section id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Engineering</div>
+        <h2 class="section-title">Architecture Thinking</h2>
+        <p class="section-desc">Visual breakdowns of core systems — from user intent to production output.</p>
+      </div>
+      <div class="arch-tabs">
+        <button class="arch-tab active" onclick="switchArch('posetrack-arch', this)">PoseTrack AI</button>
+        <button class="arch-tab" onclick="switchArch('talentmatch-arch', this)">TalentMatch AI</button>
+        <button class="arch-tab" onclick="switchArch('finpilot-arch', this)">FinPilot</button>
+        <button class="arch-tab" onclick="switchArch('voicepilot-arch', this)">VoicePilot AI</button>
+        <button class="arch-tab" onclick="switchArch('chatflow-arch', this)">ChatFlow</button>
+        <button class="arch-tab" onclick="switchArch('jpcbbank-arch', this)">JPCB Bank</button>
+        <button class="arch-tab" onclick="switchArch('servicecrm-arch', this)">ServiceCRM</button>
+        <button class="arch-tab" onclick="switchArch('jobinsight-arch', this)">JobInsight</button>
+      </div>
+
+      <!-- VoicePilot AI flow -->
+      <div class="arch-diagram active" id="voicepilot-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">👤 User</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🎤 Wake Word Detection</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">📝 Speech → Text (Whisper)</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">🧠 LLM Reasoning Engine</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">💾 Memory System (Long-term)</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🔧 Tool Calling Layer</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">🔊 Text → Speech → User</div>
+        </div>
+      </div>
+      <!-- TalentMatch AI pipeline -->
+      <div class="arch-diagram" id="talentmatch-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">📄 Resume Upload</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🔍 NLP Parser (PDF/DOCX)</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">⚙️ Skill Extraction Engine</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">🤖 BERT / TF-IDF / Hybrid Model</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🏆 ATS Scoring Engine</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">📊 Ranked Candidates Dashboard</div>
+        </div>
+      </div>
+      <!-- PoseTrack AI CV pipeline -->
+      <div class="arch-diagram" id="posetrack-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">📸 Camera Input</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🖼️ OpenCV Frame Processing</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🦴 MediaPipe Pose Estimation</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">📐 Joint Angle Calculator</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🔢 Rep Counter + Form Check</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">📊 Flask Dashboard + Analytics</div>
+        </div>
+      </div>
+      <!-- FinPilot system design -->
+      <div class="arch-diagram" id="finpilot-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">🌐 React Frontend</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🔐 Auth Layer (JWT)</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">⚡ Django REST Framework API</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">📊 Finance Analytics Engine</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🗄️ PostgreSQL Database</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">☁️ Render Cloud Deployment</div>
+        </div>
+      </div>
+      <!-- Chatflow system design -->
+      <div class="arch-diagram" id="chatflow-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">🌐 Client (Next.js)</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">⚡ WebSocket (Socket.IO)</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">🚀 Express Backend</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🔄 Real-Time Event Engine</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">💾 PostgreSQL + Prisma</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">📱 Real-Time Message Delivery</div>
+        </div>
+      </div>
+      <!-- ServiceCRM -->
+      <div class="arch-diagram" id="servicecrm-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">👥 User Request</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🔐 Authentication + RBAC</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">🏢 Tenant Resolver</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">⚙️ PHP Backend Logic</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🗄️ MySQL Database</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">✅ JSON / HTML Response</div>
+        </div>
+      </div>
+      <!-- JobInsightPortal -->
+      <div class="arch-diagram" id="jobinsight-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">🔍 User Search Query</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">📱 Responsive Frontend (HTML/CSS/JS)</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">📊 Career Insights Dashboard</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🎯 Job Matching Algorithm</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">📋 Application Tracking</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">✅ Results Display</div>
+        </div>
+      </div>
+      <!-- JPCB Bank -->
+      <div class="arch-diagram" id="jpcbbank-arch">
+        <div class="arch-flow">
+          <div class="arch-node user">🏦 User Request</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🔐 Secure Authentication</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node core">⚙️ CodeIgniter 4 Backend</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">🗄️ MySQL Database</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node process">👑 Admin / Super Admin Panel</div>
+          <div class="arch-arrow"></div>
+          <div class="arch-node output">✅ Dashboard Response</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="section" id="experience" aria-label="Work experience timeline">
+    <div class="container">
+      <div class="section-label fade-up" aria-hidden="true">Career</div>
+      <h2 class="section-title fade-up stagger-1">Experience</h2>
+      <p class="section-subtitle fade-up stagger-2" style="margin-bottom:48px">
+        Professional experience building AI-powered applications, developer tools, and production-ready software
+        solutions.
+      </p>
+      <div class="timeline fade-up stagger-3">
+        <!-- CURRENT ROLE -->
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-meta">
+            <span class="timeline-role">Software Developer Intern</span>
+            <span class="timeline-company">JBB Technologies Pvt. Ltd</span>
+            <span class="timeline-period">June 2026 – Present</span>
+            <span class="timeline-type">Internship</span>
+          </div>
+          <p class="timeline-desc">
+            Building scalable software solutions, AI-powered applications, and cloud-native platforms while delivering
+            production-ready products with cross-functional teams.
+          </p>
+          <ul class="timeline-bullets">
+            <li>Developing scalable full-stack applications and backend APIs</li>
+            <li>Building AI-powered features and automation workflows</li>
+            <li>Working with cloud platforms, databases, and deployment pipelines</li>
+            <li>Collaborating with engineering teams to improve product quality and performance</li>
+          </ul>
+        </div>
+        <!-- ENCRYPTA -->
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-meta">
+            <span class="timeline-role">Research & Development Intern</span>
+            <span class="timeline-company">Encrypta (Sidhani Technologies Pvt. Ltd.)</span>
+            <span class="timeline-period">Oct 2025 – Jan 2026</span>
+            <span class="timeline-type">Internship</span>
+          </div>
+          <p class="timeline-desc">
+            Contributed to browser extensions, usability testing, documentation, and feature enhancements focused on
+            security, user experience, and productivity.
+          </p>
+          <ul class="timeline-bullets">
+            <li>Tested and validated dummy login workflows across multiple websites and browsers</li>
+            <li>Analyzed complex government website authentication flows and identified usability improvements</li>
+            <li>Redesigned the Encrypta Browser Companion profile interface for Chrome and Firefox extensions</li>
+            <li>Integrated Preferences, Login, and Theme settings into a unified user experience</li>
+            <li>Improved mobile assistant responsiveness and positioning using USB debugging techniques</li>
+            <li>Prepared official product documentation and contributed to the v1.1.3 release upgrade</li>
+          </ul>
+        </div>
+        <!-- T&P -->
+        <div class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-meta">
+            <span class="timeline-role">Event Coordinator Member</span>
+            <span class="timeline-company">Training & Placement Cell, MIT Chh. Sambhajinagar</span>
+            <span class="timeline-period">May 2025 – Nov 2025</span>
+            <span class="timeline-type">Leadership</span>
+          </div>
+          <p class="timeline-desc">
+            Coordinated placement activities and technical events, connecting students, faculty, and recruiters to
+            ensure smooth campus hiring operations.
+          </p>
+          <ul class="timeline-bullets">
+            <li>Managed campus recruitment drives and pre-placement activities</li>
+            <li>Coordinated communication between recruiters, faculty members, and students</li>
+            <li>Handled event scheduling, logistics, and placement-related operations</li>
+            <li>Supported technical workshops and career guidance initiatives for students</li>
+            <li>Contributed to improving placement process efficiency through organized coordination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Technical Expertise</div>
+        <h2 class="section-title">Technology Stack</h2>
+        <p class="section-desc">
+          Technologies and frameworks used to build AI-powered applications,
+          scalable backend systems, cloud-native platforms, and production-ready software.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <!-- AI -->
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">🤖</div>
+            <div class="skill-cat-name">AI & LLM Engineering</div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">scikit-learn</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">MediaPipe</span>
+            <span class="skill-tag">LangChain</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">Whisper</span>
+            <span class="skill-tag">Groq API</span>
+            <span class="skill-tag">Prompt Engineering</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">NLP</span>
+          </div>
+        </div>
+        <!-- FRONTEND -->
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(99,102,241,.1);border-color:rgba(99,102,241,.2)">
+              🎨
+            </div>
+            <div class="skill-cat-name">
+              Frontend Development
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+        <!-- BACKEND -->
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(245,158,11,.1);border-color:rgba(245,158,11,.2)">
+              ⚙️
+            </div>
+            <div class="skill-cat-name">
+              Backend Development
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">CodeIgniter 4</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">REST APIs</span>
+            <span class="skill-tag">Socket.IO</span>
+            <span class="skill-tag">JWT</span>
+            <span class="skill-tag">Authentication</span>
+          </div>
+        </div>
+        <!-- CLOUD -->
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(16,185,129,.1);border-color:rgba(16,185,129,.2)">
+              ☁️
+            </div>
+            <div class="skill-cat-name">
+              Cloud & DevOps
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Microsoft Azure</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">GitHub Actions</span>
+            <span class="skill-tag">CI/CD</span>
+            <span class="skill-tag">Render</span>
+            <span class="skill-tag">Vercel</span>
+          </div>
+        </div>
+        <!-- DATABASE -->
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(6,182,212,.1);border-color:rgba(6,182,212,.2)">
+              🗄️
+            </div>
+            <div class="skill-cat-name">
+              Databases
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Database Design</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Query Optimization</span>
+          </div>
+        </div>
+        <!-- TOOLS -->
+        <div class="skill-category fade-up">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" style="background:rgba(236,72,153,.1);border-color:rgba(236,72,153,.2)">
+              🛠️
+            </div>
+            <div class="skill-cat-name">
+              Tools & Technologies
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman</span>
+            <span class="skill-tag">XAMPP</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Chrome DevTools</span>
+            <span class="skill-tag">Agile</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- =========================
+     ACHIEVEMENTS & CERTIFICATIONS
+========================== -->
+
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Credentials</div>
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <p class="section-desc">
+          A combination of academic excellence, leadership experience,
+          industry certifications, hackathon participation, and continuous
+          learning in AI, cloud computing, and cybersecurity.
+        </p>
+      </div>
+      <div class="certs-grid">
+        <!-- AI HONORS -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon">🎓</div>
+          <div>
+            <div class="cert-name">
+              AI & Machine Learning Honors
+            </div>
+            <div class="cert-issuer">
+              Bachelor of Engineering
+            </div>
+            <span class="cert-badge">
+              ★ Academic Excellence
+            </span>
+          </div>
+        </div>
+        <!-- ENCRYPTA -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon">🚀</div>
+          <div>
+            <div class="cert-name">
+              Research & Development Intern
+            </div>
+            <div class="cert-issuer">
+              Encrypta Technologies
+            </div>
+            <span class="cert-badge">
+              ✓ Industry Experience
+            </span>
+          </div>
+        </div>
+        <!-- LEADERSHIP -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon">👨‍💼</div>
+          <div>
+            <div class="cert-name">
+              Event Coordinator Lead
+            </div>
+            <div class="cert-issuer">
+              Training & Placement Cell
+            </div>
+            <span class="cert-badge">
+              ★ Leadership
+            </span>
+          </div>
+        </div>
+        <!-- NPTEL -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon">📡</div>
+          <div>
+            <div class="cert-name">
+              Cloud Computing
+            </div>
+            <div class="cert-issuer">
+              NPTEL • IIT Kharagpur
+            </div>
+            <span class="cert-badge">
+              ✓ Elite Certified
+            </span>
+          </div>
+        </div>
+        <!-- AWS -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon">☁️</div>
+          <div>
+            <div class="cert-name">
+              AWS Cloud Practitioner Essentials
+            </div>
+            <div class="cert-issuer">
+              Amazon Web Services • Coursera
+            </div>
+            <span class="cert-badge">
+              ✓ Professional Certificate
+            </span>
+          </div>
+        </div>
+        <!-- GOOGLE -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon">🛡️</div>
+          <div>
+            <div class="cert-name">
+              Foundations of Cybersecurity
+            </div>
+            <div class="cert-issuer">
+              Google • Coursera
+            </div>
+            <span class="cert-badge">
+              ✓ Professional Certificate
+            </span>
+          </div>
+        </div>
+        <!-- SIH -->
+        <div class="cert-card fade-up">
+          <div class="cert-icon">🏆</div>
+          <div>
+            <div class="cert-name">
+              Smart India Hackathon 2025
+            </div>
+            <div class="cert-issuer">
+              Internal Hackathon Participant
+            </div>
+            <span class="cert-badge">
+              ★ Innovation
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CURRENTLY BUILDING -->
+  <section id="building">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Roadmap</div>
+        <h2 class="section-title">Currently Building</h2>
+        <p class="section-desc">Active projects in development — what's shipping next.</p>
+      </div>
+      <div class="building-grid">
+        <div class="building-card progress fade-up">
+          <div class="building-status status-progress"><span class="status-dot"></span>In Progress</div>
+          <div class="building-name">JPCB Bank</div>
+          <div class="building-desc">Full-featured banking management platform with customer onboarding, accounts,
+            loans, fixed deposits, transactions, staff management, reports, and secure role-based access.</div>
+          <div class="building-progress">
+            <div class="progress-fill" style="width:60%;background:var(--success)"></div>
+          </div>
+          <div class="progress-label">60% — Backend API complete, frontend in progress</div>
+        </div>
+        <div class="building-card progress fade-up">
+          <div class="building-status status-progress"><span class="status-dot"></span>In Progress</div>
+          <div class="building-name">Personal Knowledge OS</div>
+          <div class="building-desc">RAG-based second brain that ingests personal notes, PDFs, and web clips — and
+            answers questions about your own knowledge base via conversational AI.</div>
+          <div class="building-progress">
+            <div class="progress-fill" style="width:45%;background:var(--success)"></div>
+          </div>
+          <div class="progress-label">45% — Ingestion pipeline complete</div>
+        </div>
+        <div class="building-card planned fade-up">
+          <div class="building-status status-planned"><span class="status-dot"></span>Planned</div>
+          <div class="building-name">AI DevOps Copilot</div>
+          <div class="building-desc">LLM-powered DevOps assistant that monitors deployments, diagnoses errors in CI
+            logs, suggests fixes, and can execute remediation commands with approval.</div>
+          <div class="building-progress">
+            <div class="progress-fill" style="width:12%;background:#F59E0B"></div>
+          </div>
+          <div class="progress-label">10% — Architecture design phase</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- GITHUB -->
+  <section id="github">
+    <div class="container">
+      <div class="section-header fade-up">
+        <div class="section-label">Open Source</div>
+        <h2 class="section-title">GitHub Activity</h2>
+        <img src="https://streak-stats.demolab.com?user=pn-dev-in&theme=transparent&hide_border=true"
+          style="width: 100%; max-width: 400px; margin: 1rem 0;" alt="GitHub Streak Stats">
+        <p class="section-desc">Pinned repositories from <a href="https://github.com/pn-dev-in" target="_blank"
+            style="color:var(--accent-light);text-decoration:none">github.com/pn-dev-in</a></p>
+      </div>
+      <div class="github-grid">
+        <a href="https://github.com/pn-dev-in/VoicePilot-AI" target="_blank" class="repo-card fade-up">
+          <div class="repo-name">VoicePilot-AI</div>
+          <div class="repo-desc">Privacy-focused voice assistant combining wake-word detection, speech recognition,
+            long-term memory, tool calling, and LLM reasoning into a full conversational AI system.</div>
+          <div class="repo-meta">
+            <div class="repo-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</div>
+          </div>
+        </a>
+        <a href="https://github.com/pn-dev-in/PoseTrack-AI" target="_blank" class="repo-card fade-up">
+          <div class="repo-name">PoseTrack-AI</div>
+          <div class="repo-desc">Real-time fitness tracking platform using MediaPipe, OpenCV, and computer vision for
+            pose estimation, exercise recognition, repetition counting, and calorie tracking.</div>
+          <div class="repo-meta">
+            <div class="repo-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</div>
+          </div>
+        </a>
+        <a href="https://github.com/pn-dev-in/TalentMatch-AI" target="_blank" class="repo-card fade-up">
+          <div class="repo-name">TalentMatch-AI</div>
+          <div class="repo-desc">Intelligent recruitment platform automating resume screening, candidate ranking, ATS
+            scoring, skill extraction, and job matching using NLP, BERT embeddings, and ML.</div>
+          <div class="repo-meta">
+            <div class="repo-lang"><span class="lang-dot" style="background:#3572A5"></span>Python</div>
+          </div>
+        </a>
+        <a href="https://github.com/pn-dev-in/FinPilot" target="_blank" class="repo-card fade-up">
+          <div class="repo-name">FinPilot</div>
+          <div class="repo-desc">Full-stack personal finance platform for budgeting, expense tracking, savings goals,
+            financial analytics, and data-driven money management. Live on Render.</div>
+          <div class="repo-meta">
+            <div class="repo-lang"><span class="lang-dot" style="background:#e34c26"></span>HTML / Django</div>
+          </div>
+        </a>
+      </div>
+      <div style="margin-top:2rem;text-align:center">
+        <a href="https://github.com/pn-dev-in" target="_blank" class="btn-secondary" style="display:inline-flex">
+          View All Repositories →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- AI ASSISTANT -->
+  <section id="ai-assistant">
+    <div class="container">
+      <div class="section-header fade-up" style="text-align:center;margin-bottom:2rem">
+        <div class="section-label" style="margin:0 auto 0.75rem">AI-Powered</div>
+        <h2 class="section-title">Ask My Portfolio</h2>
+        <p class="section-desc" style="margin:0 auto">Ask anything about Pravesh's projects, skills, or background.</p>
+      </div>
+      <div class="chat-container fade-up">
+        <div class="chat-header">
+          <div class="chat-header-icon">🤖</div>
+          <div>
+            <div class="chat-header-title">Portfolio Assistant</div>
+            <div class="chat-header-sub">Powered by Claude · Knows everything about Pravesh</div>
+          </div>
+          <div
+            style="margin-left:auto;display:flex;align-items:center;gap:0.35rem;font-size:0.7rem;color:var(--success)">
+            <span
+              style="width:6px;height:6px;border-radius:50%;background:var(--success);display:inline-block;animation:pulse 2s infinite"></span>
+            Online
+          </div>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+          <div class="chat-msg">
+            <div class="msg-avatar ai">AI</div>
+            <div class="msg-bubble ai">
+              Hi! I'm Pravesh's portfolio assistant. I can tell you about his AI projects, tech stack, experience, and
+              more. What would you like to know?
+            </div>
+          </div>
+        </div>
+        <div class="chat-suggestions" id="chatSuggestions">
+          <!-- Core Projects -->
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">What is TalentMatch AI?</button>
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">How does PoseTrack AI work?</button>
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">Describe FinPilot</button>
+          <!-- Tech Stack & Skills -->
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">What AI/ML technologies does he use?</button>
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">What cloud platforms does he know?</button>
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">What backend frameworks?</button>
+          <!-- Experience & Career -->
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">What is his work experience?</button>
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">What certifications does he have?</button>
+          <button class="suggestion-btn" onclick="sendSuggestion(this)">Is he available to hire?</button>
+        </div>
+        <div class="chat-input-row">
+          <input type="text" class="chat-input" id="chatInput" placeholder="Ask about projects, skills, experience..."
+            onkeydown="if(event.key==='Enter')sendMessage()">
+          <button class="chat-send" onclick="sendMessage()">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact" aria-label="Contact information">
+    <div class="container">
+      <div class="section-label fade-up" aria-hidden="true">Connect</div>
+      <h2 class="section-title fade-up stagger-1">Get in Touch</h2>
+      <p class="section-subtitle fade-up stagger-2" style="margin-bottom:40px">Open to AI, cloud, and full-stack
+        engineering roles. Let's build something real together.</p>
+      <div class="contact-grid">
+        <div class="contact-card fade-up stagger-1">
+          <div
+            style="font-size:13px;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:.06em;margin-bottom:20px">
+            Direct Links</div>
+          <div class="contact-links" role="list">
+            <a href="mailto:pravesh@example.com" class="contact-link">
+              <div class="contact-link-icon">✉️</div>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">praveshnandanwar267@gmail.com</div>
+              </div>
+            </a>
+            <a class="contact-link" href="https://github.com/pn-dev-in" target="_blank" rel="noopener" role="listitem">
+              <div class="contact-link-icon" style="background:rgba(255,255,255,.05)" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.22.48-2.69-1.07-2.69-1.07-.36-.92-.88-1.17-.88-1.17-.72-.49.05-.48.05-.48.8.06 1.22.82 1.22.82.71 1.21 1.87.86 2.33.66.07-.51.28-.86.5-1.06-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.19c0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-val">github.com/pn-dev-in</div>
+              </div>
+              <div class="contact-link-arrow" aria-hidden="true"></div>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/pravesh-nandanwar/" target="_blank" rel="noopener"
+              role="listitem">
+              <div class="contact-link-icon" style="background:rgba(10,102,194,.15)" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="#0A66C2" aria-hidden="true">
+                  <path
+                    d="M2.4 0C1.07 0 0 1.07 0 2.4S1.07 4.8 2.4 4.8 4.8 3.73 4.8 2.4 3.73 0 2.4 0zM.16 5.6H4.64V16H.16V5.6zM5.92 5.6h4.31v1.44h.06c.6-1.13 2.06-2.32 4.23-2.32C18.48 4.72 19 7.64 19 11.4V16h-4.46v-3.55c0-1.67-.03-3.82-2.32-3.82-2.32 0-2.68 1.82-2.68 3.69V16H5.92V5.6z" />
+                </svg>
+              </div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-val">in/pravesh-nandanwar</div>
+              </div>
+              <div class="contact-link-arrow" aria-hidden="true"></div>
+            </a>
+            <div class="contact-link" role="listitem">
+              <div class="contact-link-icon" style="background:rgba(37,99,235,.1)" aria-hidden="true">📍</div>
+              <div class="contact-link-text">
+                <div class="contact-link-label">Location</div>
+                <div class="contact-link-val">Nagpur, Maharashtra, India</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-card fade-up stagger-2">
+          <div
+            style="font-size:13px;color:var(--text-muted);font-weight:500;text-transform:uppercase;letter-spacing:.06em;margin-bottom:20px">
+            Send a Message</div>
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/mwpaanek" method="POST">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+            <div class="form-group">
+              <label class="form-label">
+                Name
+              </label>
+              <input class="form-input" type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">
+                Email
+              </label>
+              <input class="form-input" type="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">
+                Message
+              </label>
+              <textarea class="form-textarea" name="message" rows="6" placeholder="Tell me about your project..."
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-primary send-btn">
+              📩&nbsp;&nbsp;Send via Email
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="toast" class="toast">
+    <span id="toastIcon">✓</span>
+    <span id="toastText">
+      Message Sent Successfully
+    </span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p style="margin-bottom:0.5rem">
+      Design & Built by <a href="https://github.com/pn-dev-in">© Pravesh Nandanwar</a> · Your Friend
+    </p>
+    <p>Nagpur, India · <a href="https://github.com/pn-dev-in">github.com/pn-dev-in</a> · <a
+        href="https://linkedin.com/in/pravesh-nandanwar">LinkedIn</a></p>
+  </footer>
+
+  <!-- PROJECT MODALS -->
+  <div class="modal-overlay" id="modal-voicepilot" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">🎙️ VoicePilot AI</div>
+        <button class="modal-close" onclick="closeModalById('modal-voicepilot')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Existing voice assistants are opaque, cloud-dependent, and treat user data as a product. There was no
+            privacy-first assistant with genuine long-term memory and extensible tool use.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>VoicePilot AI is a modular voice assistant with offline-first design. Wake-word triggers local speech
+            recognition, which feeds into an LLM with a persistent vector memory store, enabling the assistant to recall
+            context across sessions and execute tools on demand — all with explicit user permissions.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag">Python</span><span class="tag green">MediaPipe</span><span class="tag">Whisper</span><span
+              class="tag purple">LangChain</span><span class="tag">Porcupine</span><span class="tag orange">Vector
+              DB</span><span class="tag">Ollama</span><span class="tag">pyttsx3</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li>Custom wake-word detection — activates without continuous microphone processing</li>
+            <li>Offline-capable STT using Whisper for privacy-sensitive environments</li>
+            <li>Long-term memory via vector embeddings — context survives restarts</li>
+            <li>Extensible tool-calling framework — web search, calculator, system automation</li>
+            <li>Local LLM support via Ollama, with cloud fallback for complex reasoning</li>
+            <li>Explicit permission model — no action taken without instruction</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Engineering Challenge</div>
+          <p>The hardest problem was designing a memory system that's both fast enough for real-time conversation and
+            persistent enough to recall context from weeks ago. The solution uses vector similarity for retrieval and a
+            summarization layer to compress old context without losing meaning.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in/VoicePilot-AI" target="_blank" class="btn-primary">View Source Code</a>
+          <button onclick="closeModalById('modal-voicepilot')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-talentmatch" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">🤖 TalentMatch AI</div>
+        <button class="modal-close" onclick="closeModalById('modal-talentmatch')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Manual resume screening is slow, inconsistent, and subject to human bias. Recruiters spend 70% of their
+            time filtering before any meaningful evaluation begins.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>TalentMatch AI automates the entire screening pipeline — parsing resumes, extracting skills, scoring
+            against job descriptions, and ranking candidates using a hybrid NLP approach combining TF-IDF speed with
+            BERT semantic accuracy.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag">Python</span><span class="tag purple">BERT</span><span
+              class="tag purple">HuggingFace</span><span class="tag">scikit-learn</span><span
+              class="tag">pdfplumber</span><span class="tag">python-docx</span><span
+              class="tag orange">Streamlit</span><span class="tag">NLTK</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li>Batch resume parsing — PDF and DOCX with automatic text normalization</li>
+            <li>Three matching strategies: TF-IDF (fast), BERT (accurate), Hybrid (production)</li>
+            <li>ATS-style scoring with detailed per-criterion breakdown</li>
+            <li>Intelligent skill extraction and missing skill gap analysis</li>
+            <li>Interactive recruiter dashboard with visual analytics</li>
+            <li>CSV and PDF report export for downstream processing</li>
+          </ul>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in/TalentMatch-AI" target="_blank" class="btn-primary">View Source Code</a>
+          <a href="https://talent-matchai.streamlit.app/" target="_blank" class="btn-primary"
+            style="background: #10B981;">Live Demo →</a>
+          <button onclick="closeModalById('modal-talentmatch')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-posetrack" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">💪 PoseTrack AI</div>
+        <button class="modal-close" onclick="closeModalById('modal-posetrack')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Personal trainers are expensive and not always accessible. People training alone lack real-time form
+            feedback and objective rep counting, leading to inefficient workouts and injury risk.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>PoseTrack AI uses your webcam to track 33 body landmarks in real time, analyzes joint angles, detects
+            exercise phases, counts repetitions automatically, and streams the analysis to a responsive web dashboard —
+            no hardware required.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag green">MediaPipe</span><span class="tag green">OpenCV</span><span
+              class="tag">Python</span><span class="tag orange">Flask</span><span class="tag">NumPy</span><span
+              class="tag">JavaScript</span><span class="tag">Chart.js</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li>Real-time pose estimation at 24+ FPS using MediaPipe Pose</li>
+            <li>Biomechanical joint angle models for 7+ exercises</li>
+            <li>Automatic repetition counting via exercise phase detection</li>
+            <li>Live calorie estimation based on rep rate and body weight input</li>
+            <li>Workout history and analytics dashboard via Flask web app</li>
+            <li>Works entirely in-browser — no app installation needed</li>
+          </ul>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in/PoseTrack-AI" target="_blank" class="btn-primary">View Source Code</a>
+          <a href="https://youtu.be/etn5ok5JK7A" target="_blank" class="btn-primary" style="background: #10B981;">Live
+            Demo →</a>
+          <button onclick="closeModalById('modal-posetrack')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-finpilot" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">💰 FinPilot</div>
+        <button class="modal-close" onclick="closeModalById('modal-finpilot')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Most personal finance apps are either too simple (spreadsheets) or too complex (enterprise tools). People
+            lack a unified view of income, spending patterns, goals, and financial health in one place.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>FinPilot is a production-deployed full-stack finance platform. It combines multi-account tracking, an
+            ML-based Financial Health Score, anomaly detection, savings goals, and interactive analytics into a polished
+            web application backed by Django REST Framework and PostgreSQL.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag orange">Django</span><span class="tag orange">Django REST Framework</span><span
+              class="tag">PostgreSQL</span><span class="tag">Python</span><span class="tag">JavaScript</span><span
+              class="tag green">Render</span><span class="tag">Chart.js</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li>Multi-account income and expense management with categories</li>
+            <li>Financial Health Score computed from income, expense, and liability ratios</li>
+            <li>Transaction anomaly detection and budget overspend alerts</li>
+            <li>Savings goal tracking with dynamic progress visualization</li>
+            <li>Spending trend forecasting using rolling window analysis</li>
+            <li>Dark/light mode responsive UI</li>
+            <li>Live production deployment on Render with PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in/FinPilot" target="_blank" class="btn-primary">View Source Code</a>
+          <a href="https://finpilot-hgxc.onrender.com/" target="_blank" class="btn-primary"
+            style="background: #10B981;">Live Demo →</a>
+          <button onclick="closeModalById('modal-finpilot')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-chatflow" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">💬 ChatFlow</div>
+        <button class="modal-close" onclick="closeModalById('modal-chatflow')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Modern teams and individuals need a real-time communication platform that combines instant messaging, group
+            collaboration, media sharing, and AI assistance — all in one scalable, production-ready system.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>ChatFlow is a full-stack real-time messaging platform inspired by WhatsApp, Telegram, Discord, and Slack.
+            It delivers instant messaging with Socket.IO, group conversations, media sharing via Cloudinary, AI-powered
+            assistance, real-time notifications, typing indicators, read receipts, and an admin dashboard for platform
+            analytics.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag">Next.js 15</span><span class="tag purple">React 19</span><span
+              class="tag">TypeScript</span>
+            <span class="tag green">Node.js</span><span class="tag green">Express</span><span
+              class="tag purple">Socket.IO</span>
+            <span class="tag">PostgreSQL</span><span class="tag orange">Prisma</span><span class="tag">JWT</span>
+            <span class="tag">Tailwind CSS</span><span class="tag">Cloudinary</span><span
+              class="tag green">Docker</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li>Real-time messaging with Socket.IO — one-to-one and group conversations</li>
+            <li>Message editing, deletion, emoji reactions, typing indicators, and read receipts</li>
+            <li>Online presence detection and real-time notifications</li>
+            <li>Friend requests, group creation, member roles, and conversation history</li>
+            <li>Media sharing — image, video, and document uploads with Cloudinary storage</li>
+            <li>AI-powered assistant for smarter communication</li>
+            <li>JWT authentication with refresh tokens and bcrypt password hashing</li>
+            <li>Admin dashboard with user management, analytics, and audit logs</li>
+            <li>Responsive design with Dark Mode and glassmorphism UI</li>
+            <li>Dockerized deployment with GitHub Actions CI/CD</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Engineering Challenge</div>
+          <p>The hardest challenge was implementing low-latency real-time communication while maintaining message
+            persistence and delivery guarantees. The solution uses Socket.IO for WebSocket connections with fallback to
+            polling, Redis for session management, and PostgreSQL with Prisma for reliable message storage — ensuring
+            messages are never lost even during connection drops.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in/ChatFlow" target="_blank" class="btn-primary">View Source Code</a>
+          <a href="https://chat-flow-eta-three.vercel.app/login" target="_blank" class="btn-primary"
+            style="background: #10B981;">Live Demo →</a>
+          <button onclick="closeModalById('modal-chatflow')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-jobinsight" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">🔍 JobInsightPortal</div>
+        <button class="modal-close" onclick="closeModalById('modal-jobinsight')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Job seekers struggle to find relevant opportunities, track applications, and gain meaningful career
+            insights due to fragmented platforms and poor user experiences.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>JobInsightPortal is a responsive frontend platform that provides an intuitive interface for exploring job
+            opportunities, gaining career insights, visualizing job trends, and tracking applications — all with fast
+            performance and seamless navigation across all devices.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag orange">HTML5</span><span class="tag orange">CSS3</span><span class="tag">JavaScript
+              (ES6+)</span>
+            <span class="tag green">Responsive Design</span><span class="tag">Bootstrap/Tailwind</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li>Fully responsive design — works seamlessly on desktop, tablet, and mobile devices</li>
+            <li>Intuitive job search interface with advanced filtering</li>
+            <li>Career insights dashboard with visual representation of job trends and statistics</li>
+            <li>Application tracking system for managing job applications</li>
+            <li>Smooth navigation with quick access to all sections</li>
+            <li>Optimized for speed and accessibility</li>
+            <li>Contact and inquiry forms for recruiter communication</li>
+            <li>Article and resources section for career guidance</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Engineering Challenge</div>
+          <p>The main challenge was creating a fully responsive interface that works flawlessly across all screen sizes
+            while maintaining fast load times. The solution uses mobile-first CSS with flexbox/grid layouts, optimized
+            images, and lazy loading techniques to ensure smooth performance even on slower connections.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in/JobInsightPortal" target="_blank" class="btn-primary">View Source
+            Code</a>
+          <a href="https://pn-dev-in.github.io/JobInsightPortal/" target="_blank" class="btn-primary"
+            style="background: #10B981;">Live Demo →</a>
+          <button onclick="closeModalById('modal-jobinsight')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-jpcbbank" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">🏦 JPCB Bank</div>
+        <button class="modal-close" onclick="closeModalById('modal-jpcbbank')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Financial institutions need secure, scalable banking platforms that can handle customer management,
+            transactions, ATM operations, and content management — all while maintaining strict security standards.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>JPCB Bank is a full-stack banking platform built with CodeIgniter 4 PHP framework. It features a
+            comprehensive admin dashboard, integrated CMS for content management, ATM location and status tracking,
+            secure transaction processing, and customer management — providing a complete banking solution.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag green">PHP 8.2+</span><span class="tag green">CodeIgniter 4</span><span
+              class="tag">MySQL</span>
+            <span class="tag orange">JavaScript</span><span class="tag orange">CSS3</span><span class="tag">HTML5</span>
+            <span class="tag">REST API</span><span class="tag">Composer</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li>Complete admin dashboard for platform management</li>
+            <li>CMS integration for dynamic content management</li>
+            <li>ATM location tracking and status monitoring</li>
+            <li>Customer account management and transaction processing</li>
+            <li>Secure authentication and authorization system</li>
+            <li>Responsive admin panel interface</li>
+            <li>Database migration and seeding support</li>
+            <li>Environment configuration for different deployment stages</li>
+            <li>Composer-based dependency management</li>
+            <li>MVC architecture following CodeIgniter 4 standards</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Engineering Challenge</div>
+          <p>The primary challenge was building a secure banking platform that balances functionality with strict
+            security requirements. The solution implements CodeIgniter 4's built-in security features including CSRF
+            protection, XSS filtering, and query binding for SQL injection prevention, along with role-based access
+            control for the admin panel.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in/jpcb-bank-project" target="_blank" class="btn-primary">View Source
+            Code</a>
+          <a href="https://jpcb.staginglink.in/" target="_blank" class="btn-primary" style="background: #10B981;">Live
+            Demo →</a>
+          <button onclick="closeModalById('modal-jpcbbank')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-servicecrm" onclick="closeModal(event)">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">🛠️ ServiceCRM</div>
+        <button class="modal-close" onclick="closeModalById('modal-servicecrm')">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">The Problem</div>
+          <p>Field service businesses (HVAC, plumbing, electrical, landscaping) lack affordable, purpose-built CRM
+            tools. They rely on spreadsheets, WhatsApp, and paper — leading to missed jobs, poor communication, no
+            analytics, and no centralized customer management.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">The Solution</div>
+          <p>ServiceCRM is a full multi-tenant SaaS CRM built with PHP and MySQL. It features role-based access control
+            (RBAC) with Admin and Super Admin panels, job dispatch, technician tracking, customer portal, automated
+            invoicing, and comprehensive analytics — all in a secure, production-grade platform.</p>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Tech Stack</div>
+          <div class="modal-tech-stack">
+            <span class="tag orange">PHP</span><span class="tag orange">MySQL</span><span class="tag">HTML5</span>
+            <span class="tag">CSS3</span><span class="tag green">JavaScript</span><span class="tag purple">RBAC</span>
+            <span class="tag">Bootstrap</span><span class="tag">jQuery</span><span class="tag">Ajax</span>
+            <span class="tag">PDO</span><span class="tag">MVC Architecture</span>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Key Features</div>
+          <ul class="modal-features">
+            <li><strong>Multi-Tenant Architecture</strong> — Complete data isolation per business with database-level
+              separation</li>
+            <li><strong>RBAC (Role-Based Access Control)</strong> — Granular permissions for Super Admin, Admin,
+              Manager, Technician, and Customer roles</li>
+            <li><strong>Super Admin Panel</strong> — Platform-wide oversight, tenant management, system settings, and
+              global analytics</li>
+            <li><strong>Admin Panel</strong> — Business-specific dashboard, user management, job dispatch, and reporting
+            </li>
+            <li><strong>Job Dispatch Board</strong> — Real-time technician availability, smart routing, and status
+              tracking</li>
+            <li><strong>Customer Portal</strong> — Job status tracking, service history, feedback submission, and
+              invoice viewing</li>
+            <li><strong>Automated Invoicing</strong> — Dynamic invoice generation, PDF export, and payment tracking</li>
+            <li><strong>Analytics Dashboard</strong> — Revenue metrics, job completion rates, technician performance,
+              and customer satisfaction scores</li>
+            <li><strong>Real-time Notifications</strong> — Email and in-app alerts for job assignments, status updates,
+              and reminders</li>
+            <li><strong>Secure Authentication</strong> — Password hashing, session management, and CSRF protection</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Engineering Challenge</div>
+          <p>The biggest challenge was implementing true multi-tenancy with complete data isolation while maintaining
+            performance and scalability. The solution uses a database-per-tenant approach with shared lookup tables,
+            combined with a robust RBAC system that ensures users from different organizations never access each other's
+            data — all while delivering sub-200ms response times for complex dashboard queries.</p>
+        </div>
+        <div class="modal-links">
+          <a href="https://github.com/pn-dev-in" target="_blank" class="btn-primary">View Source Code</a>
+          <a href="https://service.staginglink.in/" target="_blank" class="btn-primary"
+            style="background: #10B981;">Live Demo →</a>
+          <button onclick="closeModalById('modal-servicecrm')" class="btn-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
