@@ -2783,3 +2783,13 @@ body {
 #toastIcon {
   font-size: 18px;
 }
+
+.hero-subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 2px;
+    
+    margin: 12px 0 20px;
+    opacity: 0.9;
+}
